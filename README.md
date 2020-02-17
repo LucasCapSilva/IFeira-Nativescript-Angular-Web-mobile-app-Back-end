@@ -27,3 +27,4 @@ acesse http://localhost:4200/ no browser.
 
 execute tns preview na pasta raiz
 abra o app no smartphone e acesse o QR code da aplicação.
+execute tns build [android/ios] para fazer build para mobile
