@@ -1,0 +1,54 @@
+<TabView selectedIndex="1" (selectedIndexChanged)="onSelectedIndexchanged($event)">
+    <StackLayout *tabItem="{title: 'Categorias'}">
+        <GridLayout>
+            <ScrollView class="page">
+                <StackLayout>
+                    <!-- On Android the card view plugin requires adding an external library
+                        therefore it can't be demoed on Playground. You will have to download this project
+                        and build it locally to try it on Android -->
+                    <CardView *ngFor="let item of categorias" class="card" elevation="40" radius="10">
+                        <StackLayout class="card-layout">
+                            <Label class="h2" [text]="item.nome"></Label>
+                            <img [src]="item.imagem" width="150" horizontalAlignment="left"> 
+                        </StackLayout>
+                    </CardView>
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Produtos'}">
+        <GridLayout>
+            <ScrollView class="page">
+                <StackLayout>
+                    <!-- On Android the card view plugin requires adding an external library
+                        therefore it can't be demoed on Playground. You will have to download this project
+                        and build it locally to try it on Android -->
+                    <CardView *ngFor="let item of produtos" class="card" elevation="40" radius="10">
+                        <StackLayout class="card-layout">
+                            <Label class="h2" [text]="item.nome"></Label>
+                            <Label class="body" textWrap="true" fontsize="20" [text]="item.preco"></Label>
+                            <img [src]="item.imagem" width="150" horizontalAlignment="left"> 
+                        </StackLayout>
+                    </CardView>
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Feirantes'}">
+        <GridLayout>
+            <ScrollView class="page">
+                <StackLayout>
+                    <!-- On Android the card view plugin requires adding an external library
+                        therefore it can't be demoed on Playground. You will have to download this project
+                        and build it locally to try it on Android -->
+                    <CardView *ngFor="let item of feirantes" class="card" elevation="40" radius="10">
+                        <StackLayout class="card-layout">
+                            <Label class="h2" [text]="item.nome"></Label>
+                            <img [src]="item.imagem" horizontalAlignment="left" width="150" > 
+                        </StackLayout>
+                    </CardView>
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+    </StackLayout>
+</TabView>
