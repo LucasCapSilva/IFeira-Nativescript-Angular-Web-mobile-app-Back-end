@@ -1,27 +1,29 @@
-# IFeira
+# IFeira-Nativescript-Angular-Web-mobile-app-
+Exemplo de aplicação mobile/web utilizando NativeScript e Angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.0.
+## versão Web
 
-## Development server
+![tela principal](https://user-images.githubusercontent.com/57732522/74686857-8f180a00-51b1-11ea-9fe3-77a71ba7ee9b.png)
+![produtos](https://user-images.githubusercontent.com/57732522/74686866-96d7ae80-51b1-11ea-9367-086675a8bead.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## versão mobile
 
-## Code scaffolding
+![WhatsApp Image 2020-02-16 at 14 10 07](https://user-images.githubusercontent.com/57732522/74686882-a8b95180-51b1-11ea-8be6-5da0bb457481.jpeg)
+![WhatsApp Image 2020-02-16 at 14 10 20](https://user-images.githubusercontent.com/57732522/74686898-b2db5000-51b1-11ea-82af-b8e62183d125.jpeg)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalação:
+execute npm install -g nativescript.
+execute npm install na pasta raiz.
+baixe o NativeScript Playground na https://play.google.com/store/apps/details?id=org.nativescript.play&hl=pt_BR.
+baixe o NativeScript Preview https://play.google.com/store/apps/details?id=org.nativescript.preview&hl=pt_BR.
+ou na App store para dispositivos Ios.
 
-## Build
+## Start app v Web:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+execute ng serve na pasta raiz.
+acesse http://localhost:4200/ no browser.
 
-## Running unit tests
+## Start app v Mobile:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+execute tns preview na pasta raiz
+abra o app no smartphone e acesse o QR code da aplicação.
