@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<app-navbar-prod></app-navbar-prod>
+<div class="col-lg-4">
+    <img class="card-img" src="{{produto.imagem}}"  alt="Card image cap">
+<div class="card-body">
+  <h5 class="card-title">Deseja realmente deletar o produto: {{produto.nome}}?</h5>
+  <a class="btn btn-primary" (click)="btnSim()" style="float: left;" >Deletar</a>
+  <a  class="btn btn-primary" (click)="btnNao()" style="float: right;">Não deletar</a>
+</div>
+</div>
+
+

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Produto } from './../model/Produto';
 import { ProdutoService } from './../service/produto.service';
 import { Component, OnInit } from '@angular/core';
@@ -18,7 +19,7 @@ export class GetAllProdutoComponent implements OnInit {
 
   listaProduto: Produto[]
 
-  constructor(private produtoService: ProdutoService) { }
+  constructor(private produtoService: ProdutoService, private router:Router) { }
 
   ngOnInit() { 
     this.findAll()
@@ -43,7 +44,12 @@ export class GetAllProdutoComponent implements OnInit {
   findAll(){
     this.produtoService.getAllProdutos().subscribe((produtoOut: Produto[])=>{
       this.listaProduto= produtoOut;
+    }, err =>{
+      console.log(`Erro cod: ${err.status}`);
     })
+  }
+  novo(){
+    this.router.navigate(['/postProduto','produto.id']);
   }
 
 }

@@ -1,0 +1,14 @@
+<div class="form-group">
+    <label for="exampleInputEmail1">Nome</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome" [(ngModel)]="produto.nome">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Link da Imagem</label>
+    <input type="text" class="form-control"  placeholder="Imagem" [(ngModel)]="produto.imagem">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">preco</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Preço" [(ngModel)]="produto.preco">
+</div>
+<div >
+<button (click)="save()" class="btn btn-success">Salvar</button>

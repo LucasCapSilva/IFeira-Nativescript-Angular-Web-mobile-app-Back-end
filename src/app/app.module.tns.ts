@@ -13,6 +13,8 @@ import { GetAllCategoriasComponent } from '@src/app/get-all-categorias/get-all-c
 import { GetAllFeirantesComponent } from '@src/app/get-all-feirantes/get-all-feirantes.component';
 import { NavbarProdComponent } from '@src/app/navbar-prod/navbar-prod.component';
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+import { PostProdutoComponent } from '@src/app/post-produto/post-produto.component';
+import { DeleteProdutoComponent } from '@src/app/delete-produto/delete-produto.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -31,6 +33,8 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
     GetAllCategoriasComponent,
     GetAllFeirantesComponent,
     NavbarProdComponent,
+    PostProdutoComponent,
+    DeleteProdutoComponent,
   ],
   imports: [
     NativeScriptModule,

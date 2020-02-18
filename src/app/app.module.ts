@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { GetAllCategoriasComponent } from '@src/app/get-all-categorias/get-all-categorias.component';
 import { GetAllFeirantesComponent } from '@src/app/get-all-feirantes/get-all-feirantes.component';
 import { NavbarProdComponent } from '@src/app/navbar-prod/navbar-prod.component';
+import { PostProdutoComponent } from '@src/app/post-produto/post-produto.component';
+import { DeleteProdutoComponent } from '@src/app/delete-produto/delete-produto.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { NavbarProdComponent } from '@src/app/navbar-prod/navbar-prod.component'
     GetAllCategoriasComponent,
     GetAllFeirantesComponent,
     NavbarProdComponent,
+    PostProdutoComponent,
+    DeleteProdutoComponent,
   ],
   imports: [
     BrowserModule,

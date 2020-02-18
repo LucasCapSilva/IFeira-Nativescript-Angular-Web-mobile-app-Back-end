@@ -1,3 +1,5 @@
+import { DeleteProdutoComponent } from '@src/app/delete-produto/delete-produto.component';
+import { PostProdutoComponent } from '@src/app/post-produto/post-produto.component';
 import { GetAllFeirantesComponent } from '@src/app/get-all-feirantes/get-all-feirantes.component';
 import { GetAllCategoriasComponent } from '@src/app/get-all-categorias/get-all-categorias.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
@@ -36,5 +38,13 @@ export const routes: Routes = [
 {
   path: 'feirantes',
   component: GetAllFeirantesComponent,
+},
+{
+  path: 'postProduto',
+  component: PostProdutoComponent,
+},
+{
+  path: 'deleteProduto',
+  component: DeleteProdutoComponent,
 },
 ];

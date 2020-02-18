@@ -1,16 +1,25 @@
-<app-navbar></app-navbar>
 <app-navbar-prod></app-navbar-prod>
-<div class="container">
-    <div class="row">
-    <div>
-    <h1>Produtos</h1>
-    <div class="card" style="width: 18rem;" *ngFor="let item of listaProduto"style="float: left">
-        <img class="card-img-top" src="{{item.imagem}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{item.nome}}</h5>
-          <h5 class="card-title">{{item.preco}}</h5>
-        </div>
+<div class="row">
+  <div class="col-4" >
+    <a  class="btn btn-primary" style="padding-left: 2%;" [routerLink]="['/postProduto']">salvar novo produto</a>
+</div>
+<div class="col-8"  style="text-align: left;">
+  <h3 style="padding-left: 9%;">inclua um novo produto</h3>
+</div>
+
+    <div class="card" style="width: 18rem;" *ngFor="let produto of listaProduto">
+      <img  src="{{produto.imagem}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{produto.nome}}</h5>
+        <p class="card-text">{{produto.preco}}</p>
+        <div style="text-align: center;">
+        <a  class="btn btn-primary" [routerLink]="['/postProduto', produto.id]" style="float: left;">salvar</a>
+        <a  class="btn btn-primary" [routerLink]="['/deleteProduto', produto.id]" style="float: right;">delete</a>
+      </div>
+      </div>
     </div>
+    
+    
 
 
     
