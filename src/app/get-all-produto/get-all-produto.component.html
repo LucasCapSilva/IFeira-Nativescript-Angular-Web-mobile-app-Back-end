@@ -1,13 +1,13 @@
 <app-navbar-prod></app-navbar-prod>
 <div class="row">
-  <div class="col-4" >
+  <div class="col-sm-5 col-md-3 col-4">
     <a  class="btn btn-primary" style="padding-left: 2%;" [routerLink]="['/postProduto']">salvar novo produto</a>
 </div>
-<div class="col-8"  style="text-align: left;">
+<div class="col-sm-7 col-md-9 col-8"  style="text-align: left;">
   <h3 style="padding-left: 9%;">inclua um novo produto</h3>
 </div>
-
-    <div class="card" style="width: 18rem;" *ngFor="let produto of listaProduto">
+<div class="row">
+    <div class="card col-xl-3 col-md-4 col-sm-5 col-10" style="width: 18rem;" *ngFor="let produto of listaProduto">
       <img  src="{{produto.imagem}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{produto.nome}}</h5>
