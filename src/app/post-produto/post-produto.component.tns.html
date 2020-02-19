@@ -1,1 +1,10 @@
-<Button text="post-produto works!" class="btn btn-primary"></Button>
+<app-navbar></app-navbar>
+<StackLayout class=" nt-input" >
+        <TextField hint="nome"  fontsize="18" [(ngModel)]="produto.nome"></TextField>
+        <StackLayout class=" nt-input" >
+            <TextField hint="imagem"   fontsize="18" [(ngModel)]="produto.imagem" ></TextField> 
+            <StackLayout class=" nt-input" >
+                <TextField hint="preço"  fontsize="18" [(ngModel)]="produto.preco" ></TextField>   
+</StackLayout>
+<Button class="-primary -rounded-lg" text="Logar" (tap)="save()"></Button>
+</StackLayout>

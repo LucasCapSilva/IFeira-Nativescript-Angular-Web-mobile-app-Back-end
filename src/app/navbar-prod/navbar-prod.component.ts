@@ -27,5 +27,20 @@ export class NavbarProdComponent implements OnInit {
     this.router.navigate(['/feirantes']);
     
   }
+  public irParaHome() {
+    this.router.navigate(['/home']);
+  }
+
+  public irParaLogin() {
+    this.router.navigate(['/login']);
+  }
+
+  public irParaCadastrar() {
+    this.router.navigate(['/cadastrar']);
+  }
+
+  novo(){
+    this.router.navigate(['/postProduto','produto.id']);
+  }
 
 }

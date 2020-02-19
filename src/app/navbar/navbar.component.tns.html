@@ -1,1 +1,11 @@
-<Button text="navbar works!" class="btn btn-primary"></Button>
+<ActionBar title="IFeira">
+    <ActionItem text="Home" (tap)="irParaHome()"
+                ios.systemIcon="16" ios.position="right" android.position="popup">
+    </ActionItem>
+    <ActionItem text="Login" (tap)="irParaLogin()"
+                ios.systemIcon="16" ios.position="right" android.position="popup">
+    </ActionItem>
+    <ActionItem text="Cadastro" (tap)="irParaCadastrar()"
+                ios.systemIcon="16" ios.position="right" android.position="popup">
+    </ActionItem>
+</ActionBar>
